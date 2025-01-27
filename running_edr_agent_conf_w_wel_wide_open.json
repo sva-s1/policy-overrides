@@ -1,0 +1,2117 @@
+{
+  "db": {
+    "rocksdb": {
+      "writeBatch": {
+        "maxSize": 134217728,
+        "reservedSize": 4096,
+        "shrinkCapacityTriggerSize": 16777216
+      },
+      "delRetryCount": 5,
+      "blockCacheSize": 67108864,
+      "flushRetryCount": 5,
+      "writeBufferSize": 33554432,
+      "writeRetryCount": 5,
+      "cfOptionsOverride": "",
+      "dbOptionsOverride": "",
+      "delRetryTimeoutInMS": 3000,
+      "tableOptionsOverride": "",
+      "verifyChecksumOnRead": false,
+      "flushRetryTimeoutInMS": 3000,
+      "forceDynamicOverrides": false,
+      "writeRetryTimeoutInMS": 3000,
+      "maxCorruptedDBsFilesToPreserve": 5,
+      "memoryThresholdToReduceMemUsage": 314572800,
+      "shouldPreserveFilesOnCorruption": true,
+      "includeCurrentDbFilesInFetchLogs": false,
+      "includePreservedFilesInFetchLogs": true
+    },
+    "sdkDbMaxSizeBytes": 209715200,
+    "sendRecoveryTelemetry": true,
+    "sendDbPruningTelemetry": true,
+    "sendDbCorruptionTelemetry": true
+  },
+  "dbt": {
+    "enabled": true,
+    "luaDebugInject": "",
+    "maxNumLuaDBTCrashes": 2
+  },
+  "idr": {
+    "idrEnabled": false,
+    "dynamicHooks": true
+  },
+  "ppl": true,
+  "proxy": {
+    "config": "",
+    "useProxyLib": false,
+    "migrateToProxyLib": false
+  },
+  "mbrMon": true,
+  "PEBTrap": true,
+  "PICTrap": true,
+  "hooking": true,
+  "logging": {
+    "mode": "binary",
+    "rotate": true,
+    "maxFileSize": 100,
+    "maxFileCount": 50,
+    "dbLoggingLevel": 2,
+    "enableDBLogging": false,
+    "rotationInterval": 60,
+    "encryptionKeyIndex": 0,
+    "platformLogsTimeout": 600
+  },
+  "useADSI": true,
+  "uwfMode": false,
+  "version": "24.1",
+  "eventLog": {
+    "debug": false,
+    "customer": true,
+    "maxSizeMB": 1024
+  },
+  "shutdown": {
+    "dropEventsTimeoutSeconds": 5,
+    "preshutdownTimeoutSeconds": 10,
+    "dropEventsNonshutdownTimeoutSeconds": 180
+  },
+  "sidCache": {
+    "enable": true,
+    "invalidationInterval": 86400
+  },
+  "uiConfig": {
+    "ods": {
+      "showScanReportFromContextMenu": true,
+      "showProgressBarFromContextMenu": true
+    },
+    "config": {
+      "maxFileSize": 33554432
+    },
+    "language": "",
+    "agentUiOn": true,
+    "enableZMQ": false,
+    "capabilities": {
+      "deviceTab": false,
+      "supportTab": true,
+      "scanHistory": false,
+      "agentDetails": true,
+      "quarantineTab": true,
+      "threatsHistory": true,
+      "functionalProblem": false,
+      "networkQuarantine": true
+    },
+    "contactEmail": "",
+    "contactOther": "",
+    "contactCompany": "",
+    "showSuspicious": true,
+    "contactFreeText": "",
+    "detailsInterval": 60,
+    "maxEventAgeDays": 30,
+    "maxThreatsCount": 30,
+    "maxEventsOverview": 30,
+    "contactPhoneNumber": "",
+    "contactDirectMessage": "",
+    "maxDeviceEventsCount": 20,
+    "maxDeviceHistoryDays": 30,
+    "contactSupportWebsite": "",
+    "autoExternalDevScanner": false,
+    "devicePopUpNotifications": true,
+    "maxLastEventsHistoryDays": 30,
+    "maxQuarantinedFilesCount": 20,
+    "threatPopUpNotifications": true
+  },
+  "collectDv": true,
+  "dllConfig": {
+    "edrEnabled": true,
+    "dynamicConfiguration": "",
+    "inlineScannerRpcTimeout": 10,
+    "avoidUsingTicketSpinlock": false,
+    "blockProcessDetachCallsWithoutShutdown": true
+  },
+  "dosConfig": {
+    "synFloodConfig": {
+      "allowedAttempts": 2000,
+      "validationInterval": 10
+    },
+    "connectionConfig": {
+      "allowedAttempts": 1000,
+      "validationInterval": 10
+    },
+    "outgoingConnectionConfig": {
+      "allowedAttempts": 1000,
+      "validationInterval": 10
+    },
+    "synFloodDetectionEnabled": false,
+    "connectionDetectionEnabled": false,
+    "outgoingConnectionDetectionEnabled": false
+  },
+  "injectPPL": false,
+  "injection": true,
+  "luaMemory": {
+    "collectLuaDump": true,
+    "thresholdBytes": 104857600,
+    "watchdogIntervalSeconds": 3600
+  },
+  "queryLdap": true,
+  "relinking": {
+    "com": true,
+    "startup": true,
+    "autoruns": true,
+    "apcVerbose": false,
+    "namedPipes": true,
+    "wmiPersistent": true,
+    "rpcLRUCacheMaxSize": 20000,
+    "rpcLRUCacheTrimSize": 10000,
+    "localhostRpcRelinking": true,
+    "rpcCOMLRUCacheMaxSize": 200,
+    "threadCreationVerbose": false,
+    "rpcCOMLRUCacheTrimSize": 100,
+    "sendNamedPipesTelemetry": true,
+    "namedPipesTelemetryInterval": 2,
+    "rpcIdenticalRelinkingTracingInterval": 100,
+    "limitLocalhostRpcRelinkingToUuidWhitelist": true
+  },
+  "syncEvent": false,
+  "vssConfig": {
+    "backupType": 5,
+    "pausePeriod": 48,
+    "snapshotCtx": 9,
+    "traceWriters": false,
+    "storageResize": {
+      "shouldResize": true,
+      "percentageOfDisk": 10
+    },
+    "vssProtection": true,
+    "agentVssWriters": true,
+    "retentionPolicy": {
+      "enabled": false,
+      "expiration": {
+        "days": 14,
+        "hours": 0,
+        "minutes": 0
+      }
+    },
+    "excludedVssWriters": "",
+    "skipHotplugVolumes": true,
+    "initialSnapshotDelay": 0,
+    "protectDiffAreaResize": true,
+    "enableStorageVssWriter": true,
+    "includeNonDriveVolumes": false,
+    "minDiffAreaSizeDivisor": 10,
+    "pausePeriodDiffAreaSize": 100,
+    "upsizeInsteadOfRejection": false,
+    "enableLogsWriterVssWriter": true,
+    "excludeVssOptimizationWriter": true,
+    "vssProtectOnlyAgentSnapshots": true,
+    "enableResearchDataCollectorVssWriter": true,
+    "protectDiffAreaResizeOnlyOnBootVolume": true,
+    "enableStaticResearchDataCollectorVssWriter": true,
+    "enableProtobufResearchDataCollectorVssWriter": true
+  },
+  "amsiConfig": {
+    "threshold": 3,
+    "ioavLogOnError": true,
+    "maxContentSize": 102400,
+    "rpcTimeoutInMs": 60000,
+    "enableBypassDetection": true,
+    "registerAsAmsiProvider": true,
+    "registerAsIoavProvider": true
+  },
+  "bitsConfig": {
+    "progressReportSeconds": {
+      "value": 60
+    },
+    "useAgentProxySettings": true,
+    "terminalTimeoutSeconds": 18000,
+    "minimumRetryDelaySeconds": 4294967295,
+    "noProgressTimeoutSeconds": 18000
+  },
+  "certConfig": {
+    "takeCryptsvcDump": false,
+    "telemetriesConfig": {
+      "interval": 7200000,
+      "maxTelemetries": 20,
+      "shouldSendCertUpdate": false,
+      "shouldSendTelemetries": true
+    },
+    "invalidationConfig": {
+      "maxRetriesAttempts": 5,
+      "paddedCertificates": false,
+      "shouldInvalidateCerts": true,
+      "invalidateBasedOnEpoch": true,
+      "trustedVerificationTime": {
+        "enabled": false,
+        "deltaThreshold": 2592000000
+      },
+      "invalidateCryptEFileError": true,
+      "suspiciousRootCertificatesForKnown": true,
+      "alignWithWin7ExpiredCertificatesPolicy": true,
+      "suspiciousActiveContentWithPaddedCertificate": false
+    },
+    "wintrustRegPolicySettings": 0
+  },
+  "mitigation": {
+    "svchosts": true,
+    "remediateWMI": true,
+    "removeMacros": false,
+    "opLockTimeout": 2000,
+    "remediateTasks": true,
+    "killPostMitigation": true,
+    "forceCleanAllModules": true,
+    "mitigateFilesByFileId": true,
+    "quarantinePersistence": true,
+    "checkRestoreTargetPath": true,
+    "mitigationReportLogging": false,
+    "allowCoreOsMitigationLoop": false,
+    "completePendingMitigations": true,
+    "mitigateSelfHostedServices": true,
+    "checkUnquarantinedTargetPath": true,
+    "maxInactiveProcessesInKillReport": 5000,
+    "reportSuccessOnRollbackFailedFile": true,
+    "preventSentinelProcessesTermination": false
+  },
+  "onValidate": "notifyUI",
+  "passphrase": {
+    "require": true
+  },
+  "preventWsl": false,
+  "tracerDump": false,
+  "yaraConfig": {
+    "sendTelemetry": true,
+    "replacementDurationThreshold": 10000
+  },
+  "agentWorker": {
+    "dumpOnTimeout": true,
+    "workerTimeout": 180000,
+    "cpuUsageRegularStartup": 5,
+    "cpuUsageAfterInstallation": 20
+  },
+  "certControl": {
+    "rootCAs": {
+      "useAgentStore": false,
+      "relevancyPeriod": 2629746000,
+      "updateIntervalMax": 691200000,
+      "updateIntervalMin": 518400000
+    },
+    "fullDiskCertScan": {
+      "enabled": true,
+      "cooldownPeriod": 45,
+      "cpuUsagePeriodic": 5,
+      "cpuUsageAfterOsUpgrade": 10,
+      "cpuUsageAfterInstallation": 10
+    },
+    "certResultCacheSize": 536870912,
+    "avoidRevocationCheck": true,
+    "verifyImportantExecutablesCertificate": true
+  },
+  "disableMode": {
+    "crashCount": 10,
+    "deadlockCount": 10,
+    "maxCrashRecords": 200,
+    "allowAutoDisable": true,
+    "maxDeadlockRecords": 200,
+    "stateReportInterval": 86400,
+    "adjacentErrorsPeriod": 21600,
+    "protectedAutoDisable": true,
+    "enableDeadLockWatchDog": true,
+    "deadLockWatchDogInterval": 900,
+    "agentParamsDeadLockTimeout": 600,
+    "writeEventLogForAutoDisable": true,
+    "autoDisableMgmtNotifications": true,
+    "fallbackToUnprotectedAllowed": true,
+    "recoverFromAutoDisableEnabled": true,
+    "waitForMgmtResponseBeforeReloadTimeout": 300000
+  },
+  "lunarConfig": {
+    "enabled": true,
+    "verbose": false,
+    "memoryLimitMB": 0,
+    "luaDebugInject": "",
+    "threadPriority": 0,
+    "eventQueueLimit": 1000,
+    "sendLunarStatus": true,
+    "telemetryInterval": 3600000
+  },
+  "remoteShell": {
+    "enabled": true,
+    "runAsSystem": false,
+    "logTranscript": false,
+    "pingIntervalSec": 120
+  },
+  "showAgentUI": true,
+  "suppressWsl": false,
+  "verboseLdap": false,
+  "agentLogging": true,
+  "apcProtected": true,
+  "apcRelinking": true,
+  "assetsConfig": {
+    "shouldExpandEnvironmentVars": true
+  },
+  "pythonConfig": {
+    "auditEventsToLog": false
+  },
+  "rangerConfig": {
+    "enabled": true,
+    "logLevel": "Info",
+    "telemetry": true
+  },
+  "rpcRelinking": true,
+  "staticConfig": {
+    "peStatus": 2,
+    "pyStatus": 2,
+    "emlStatus": 2,
+    "lnkStatus": 2,
+    "pdfStatus": 1,
+    "rarStatus": 2,
+    "sfxStatus": 2,
+    "tarStatus": 2,
+    "zipStatus": 2,
+    "lzmaStatus": 2,
+    "bzip2Status": 2,
+    "eicarStatus": 2,
+    "maxFileSize": 31457280,
+    "officeStatus": 2,
+    "cabinetStatus": 2,
+    "maxMacroContentSize": 1048576,
+    "suppressionOverridingIndicators": [
+      "SquirrelWaffle_MALDOC_Dec2021",
+      "SquirrelWaffle_Dropper_SeptOct2021"
+    ]
+  },
+  "tracerConfig": {
+    "flushTimerMs": 1000,
+    "secureSession": true,
+    "sessionRecovery": true,
+    "nonstoppableSession": true,
+    "recoverSessionOnReEnable": true,
+    "handleEventsFromDifferentVersions": false
+  },
+  "vssSnapshots": true,
+  "antiTampering": true,
+  "denyLsassRead": true,
+  "deviceControl": {
+    "report": ["blocked", "connected", "disconnected", "configured-read-only"],
+    "enabled": false,
+    "notifyUI": true,
+    "attachAlways": false,
+    "disableRFCOMM": false,
+    "loadOrderGroup": "Boot Bus Extender",
+    "enablePdoFilter": false,
+    "disableBLEFeature": true,
+    "allowBLEDeviceOnError": true,
+    "registryRuleSizeLimit": 10485760,
+    "reportSuppressionTime": 900,
+    "disableBLECommunication": false,
+    "uiReportSuppressionTime": 60,
+    "usbInfoQueryExclusionList": [
+      "0x10831626",
+      "0x1083163d",
+      "0x10831638",
+      "0x4a9160b",
+      "0x1083163c"
+    ],
+    "usbInfoQueryExclusionEnabled": true,
+    "disallowReadOnlyPermissionsControl": false
+  },
+  "invalidHashes": [
+    "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "0000000000000000000000000000000000000000",
+    "ffffffffffffffffffffffffffffffffffffffff"
+  ],
+  "mbrProtection": true,
+  "monitorConfig": {
+    "ProcMonFlags": 0,
+    "ignoreShares": false,
+    "registerNPFS": true,
+    "trackThreads": true,
+    "RegMonFlagsEx": 0,
+    "openLockFiles": true,
+    "queryOnCreate": true,
+    "relinkDrivers": true,
+    "protectSamSave": true,
+    "cacheDriverData": true,
+    "delayIISReading": {
+      "delayIISReadingEnabled": false,
+      "delayIISReadingTimeInSeconds": 1
+    },
+    "detectionEnabled": true,
+    "preemptionConfig": {
+      "processes": [
+        "\\cmd.exe",
+        "\\powershell.exe",
+        "\\powershell_ise.exe",
+        "\\pwsh.exe",
+        "\\wscript.exe",
+        "\\cscript.exe",
+        "\\winword.exe",
+        "\\wordview.exe",
+        "\\powerpnt.exe",
+        "\\pptview.exe",
+        "\\excel.exe",
+        "\\soffice.bin",
+        "\\onenote.exe",
+        "\\acrord32.exe",
+        "\\acrobat.exe",
+        "\\foxitreader.exe",
+        "\\regsvr32.exe",
+        "\\rundll32.exe"
+      ],
+      "sendTelemetry": false,
+      "sendFailureTelemetry": false,
+      "enablePreemptiveContentBlock": false,
+      "enableRemotePreemptiveContentBlock": false
+    },
+    "protectSyskeyQuery": false,
+    "cacheMinifilterData": false,
+    "checkDriverStartType": false,
+    "parseModifiedDrivers": true,
+    "protectSamSaveRemote": false,
+    "notifyOnSetEncryption": true,
+    "protectAutoLoggerGuid": true,
+    "driverBlockingPolicyEa": true,
+    "moveOnNextBootByFileId": true,
+    "setImageVerifyCallback": true,
+    "verifyDriverCertInline": true,
+    "forceMonitorEnforcement": false,
+    "protectUserRegistryHive": false,
+    "blockFsCtlSdGlobalChange": true,
+    "protectSyskeyQueryRemote": false,
+    "detectFsCtlSdGlobalChange": true,
+    "useKernelStForDriverTrace": false,
+    "customFileExtensionsConfig": {
+      "sizeLimit": 20
+    },
+    "disableVolumeSnapshotCheck": false,
+    "enableEtlTelemetryProvider": true,
+    "protectSyskeyQueryWindows7": false,
+    "processHerpaderpingDetection": true,
+    "reorderExclusionsDynamically": false,
+    "unauthorizedLsaAccessMaskAdd": 0,
+    "useKernelWinStForDriverTrace": true,
+    "useSharedWriteInHerpaderping": true,
+    "attributeKernelFileOperations": true,
+    "clonedProcessProtectionConfig": {
+      "abTest": false,
+      "enabled": false,
+      "abTestHandleSwapEnabledGroup": true
+    },
+    "processHerpaderpingPrevention": false,
+    "protectWmiSecurityDescriptors": true,
+    "detectRemoteDllLoadInPplProcess": true,
+    "excludeFailedRegistryOperations": true,
+    "unauthorizedLsaAccessMaskRemove": 0,
+    "attributeKernelProcessOperations": true,
+    "preventRemoteDllLoadInPplProcess": false,
+    "protectSyskeyQueryThirdPartyOnly": false,
+    "traceDriverPrivilegedProcessOpen": true,
+    "attributeKernelRegistryOperations": true,
+    "notifyOnCodeIntegrityOptionsChange": true,
+    "notifyOnRemoteCreateFileFromReader": true,
+    "blockUnknownProcessesWithAgentToken": false,
+    "reportUnknownProcessesWithAgentToken": true,
+    "preventUnauthorizedLsaAccessToProcess": false,
+    "fileRenameScanTryCreateWorkItemTimeout": 5000,
+    "dropExpensiveEventsForExcludedProcesses": true,
+    "detectCloudReparsePointDllLoadInPplProcess": true,
+    "preventUnauthorizedLsaAccessToAgentProcess": true,
+    "setDriverBlockingPolicyEaOnUnsignedDrivers": false,
+    "preventCloudReparsePointDllLoadInPplProcess": false,
+    "blockDirectoryAdsSymlinkForProtectedDirectories": true,
+    "checkDriverServiceKeyOnPrivilegedKernelOperations": false
+  },
+  "researchDumps": {
+    "enabled": false,
+    "encrypt": true,
+    "compress": true,
+    "sendTelemetry": true,
+    "tryPssSnapshot": true,
+    "dumpLimitationPerProcess": 2,
+    "maximalTimeOnDiskInHours": 72,
+    "maximalAccumulatedSizeInMB": 1024,
+    "perProcessLimitationWindow": 120
+  },
+  "sendModelName": true,
+  "symlinkConfig": {
+    "detectMountPointsCreation": true,
+    "detectNtfsSymlinkCreation": true,
+    "mountPointCreationVisibility": true,
+    "symbolicLinkCreationVisibility": true,
+    "preventSuspiciousMountPointsCreation": false
+  },
+  "autoFileUpload": {
+    "enabled": false,
+    "maxFileSize": 0,
+    "maxChunkSize": 0,
+    "pesBatchSize": 1,
+    "dumpsBatchSize": 1
+  },
+  "avoidTIHooking": true,
+  "deepVisibility": {
+    "dns": {
+      "squash": {
+        "enabled": true
+      },
+      "operation": true
+    },
+    "file": {
+      "scan": 2,
+      "rename": true,
+      "creation": true,
+      "deletion": true,
+      "malicious": true,
+      "squashFile": {
+        "rename": {
+          "enabled": true
+        },
+        "creation": {
+          "enabled": true
+        },
+        "deletion": {
+          "enabled": true
+        },
+        "modification": {
+          "enabled": true
+        }
+      },
+      "modification": true,
+      "smartFileMonitoring": true,
+      "focusedFileMonitoring": {
+        "rename": true,
+        "creation": true,
+        "deletion": true
+      },
+      "onExcludedFileModifier": false
+    },
+    "http": {
+      "operation": true
+    },
+    "user": {
+      "loggedin": true,
+      "loggedout": true
+    },
+    "debug": {
+      "prints": false,
+      "syncEvent": false,
+      "preprocessorInject": "",
+      "manualMetricControl": false,
+      "manualPacketControl": false,
+      "postprocessorInject": ""
+    },
+    "group": {
+      "creation": true
+    },
+    "proxy": "single",
+    "tcpv4": {
+      "listen": true,
+      "squash": {
+        "enabled": true
+      },
+      "incoming": true,
+      "outgoing": true
+    },
+    "tcpv6": {
+      "listen": false,
+      "squash": {
+        "enabled": true
+      },
+      "incoming": false,
+      "outgoing": false
+    },
+    "kernel": {
+      "ioctl": true,
+      "driverLoad": true,
+      "openSentinelProcess": false
+    },
+    "metric": {
+      "enabled": true,
+      "exclusions": true,
+      "enabledCount": true,
+      "disabledCount": true,
+      "filteredCount": true,
+      "resetAfterInterval": true
+    },
+    "server": {
+      "urls": [
+        "https://ioc-gw-prod-us-1a.sentinelone.net",
+        "https://ioc-gw-prod-us-1b.sentinelone.net"
+      ]
+    },
+    "masking": {
+      "enabled": false,
+      "patterns": [
+        ".*\\.pdf.*",
+        ".*\\.7z.*",
+        ".*\\.zip.*",
+        ".*\\.tar.*",
+        ".*\\.tar\\.gz.*",
+        ".*\\.tarbz2.*",
+        ".*\\.rar.*",
+        ".*\\.doc.*",
+        ".*\\.dot.*",
+        ".*\\.wbk.*",
+        ".*\\.docx.*",
+        ".*\\.docm.*",
+        ".*\\.dotx.*",
+        ".*\\.dotm.*",
+        ".*\\.docb.*",
+        ".*\\.xls.*",
+        ".*\\.xlt.*",
+        ".*\\.xlm.*",
+        ".*\\.xlsx.*",
+        ".*\\.xlsm.*",
+        ".*\\.xltx.*",
+        ".*\\.xltm.*",
+        ".*\\.xlsb.*",
+        ".*\\.xla.*",
+        ".*\\.xlam.*",
+        ".*\\.xll.*",
+        ".*\\.xlw.*",
+        ".*\\.ppt.*",
+        ".*\\.pot.*",
+        ".*\\.pps.*",
+        ".*\\.pptx.*",
+        ".*\\.pptm.*",
+        ".*\\.potx.*",
+        ".*\\.potm.*",
+        ".*\\.ppam.*",
+        ".*\\.ppsx.*",
+        ".*\\.ppsm.*",
+        ".*\\.sldx.*",
+        ".*\\.sldm.*",
+        ".*\\.ACCDB.*",
+        ".*\\.ACCDE.*",
+        ".*\\.ACCDT.*",
+        ".*\\.ACCDR.*",
+        ".*\\.one.*",
+        ".*\\.onetoc.*",
+        ".*\\.onetoc2.*",
+        ".*\\.pub.*",
+        ".*\\.xps.*",
+        ".*\\.lnk.*"
+      ]
+    },
+    "process": {
+      "exit": false,
+      "creation": true,
+      "injection": 0,
+      "termination": true,
+      "modification": true
+    },
+    "scripts": {
+      "vba": false,
+      "batch": false,
+      "python": false,
+      "enabled": true,
+      "vbScript": false,
+      "javaScript": false,
+      "powershell": true,
+      "maxSizeBytes": 32768
+    },
+    "eventLog": {
+      "squash": {
+        "enabled": true
+      },
+      "enabled": true,
+      "sendOriginalXML": true,
+      "collectAllProviders": true
+    },
+    "registry": {
+      "squash": {
+        "enabled": true
+      },
+      "keyDelete": true,
+      "keyExport": true,
+      "keyImport": true,
+      "keyRename": true,
+      "keyCreated": true,
+      "valueDelete": true,
+      "valueCreated": true,
+      "valueModified": true,
+      "ignoreBamEvents": true,
+      "maxDataSizeBytes": 100,
+      "processesToFilter": [
+        ["vmware, inc.", "vmwaretunnel"],
+        ["vmware inc.", "vmwaretunnel"],
+        ["mcafee, inc.", "mcafee dlp endpoint service"],
+        ["musarubra us llc", "trellix dlp endpoint service"]
+      ],
+      "keySecurityChanged": true,
+      "filterImplicitValueDelete": true
+    },
+    "namedPipe": {
+      "squash": {
+        "enabled": true
+      },
+      "creation": false,
+      "connection": {
+        "local": false,
+        "remote": false
+      }
+    },
+    "exclusions": {
+      "enabled": true
+    },
+    "moduleLoads": {
+      "image": false,
+      "hashBasedLRU": true,
+      "ldrCacheMaxSize": 10000,
+      "focusedMonitoring": false,
+      "systemDllsToFilter": ["ntdll.dll", "kernel32.dll", "kernel32"],
+      "sendInProcessClient": false
+    },
+    "persistency": {
+      "operation": true
+    },
+    "crossProcess": {
+      "openProcess": {
+        "enabled": true,
+        "accessDenylist": [4096]
+      },
+      "hashBasedLRU": true,
+      "remoteThread": true,
+      "duplicateThread": {
+        "enabled": true
+      },
+      "duplicateProcess": {
+        "enabled": true
+      },
+      "accessCacheMaxSize": 1000
+    },
+    "scheduledTask": {
+      "del": true,
+      "reg": true,
+      "start": true,
+      "update": true,
+      "trigger": true
+    },
+    "lateralMovement": {
+      "enabled": false
+    },
+    "maxEventsInPacket": 1000,
+    "maxPacketsInQueue": 15000,
+    "dvExclusionsVersion": 1000,
+    "sendIntervalSeconds": 180,
+    "behavioralIndicators": {
+      "squash": {
+        "enabled": true
+      },
+      "operation": 2
+    },
+    "networkTrafficInspection": {
+      "enabled": false,
+      "minimumSentKiloBytesToNotify": 20480,
+      "sentKiloBytesUpdateChunkSize": 1024,
+      "minimumReceivedKiloBytesToNotify": 204800,
+      "receivedKiloBytesUpdateChunkSize": 5120
+    },
+    "telemetryIntervalSeconds": 3600,
+    "enrichIncompleteProcesses": true,
+    "autoInstallBrowserExtensions": {
+      "enabled": true
+    },
+    "randomizeHostIntervalMinutes": 60
+  },
+  "extensiveDumps": false,
+  "hangDumpConfig": {
+    "dumpHungMonitorUnload": false,
+    "hungMonitorUnloadTimeoutMinutes": 5
+  },
+  "manualGrouping": false,
+  "perfLogsConfig": {
+    "interval": 300,
+    "shouldPruneDB": true,
+    "maxDBSizeInBytes": 10485760,
+    "collectStatistics": true,
+    "dataExpirationTime": 96,
+    "cpuSamplingInterval": 1,
+    "collectCPUStatistics": true,
+    "shouldReportOnFetchLogs": true,
+    "fetchLogsReportTimeFrame": 120,
+    "collectMainLoopStatistics": true,
+    "percentileToDeleteOnPruning": 4
+  },
+  "researchUpload": true,
+  "sendThreatLogs": true,
+  "tiEventsConfig": {
+    "stackTraceTiReadVM": false,
+    "stackTraceTiAllocVM": false,
+    "stackTraceTiMapView": false,
+    "stackTraceTiWriteVM": true,
+    "indirectSyscallChecks": true,
+    "stackTraceTiProtectVM": false,
+    "resolveTIWriteVMEvents": true,
+    "stackTraceTiResumeThread": false,
+    "stackTraceTiSuspendThread": false,
+    "stackTraceTiSetThreadContext": false
+  },
+  "avoidDumpUpload": false,
+  "enableGoScanner": false,
+  "exclusionConfig": {
+    "enable": true,
+    "invalidPatternRegex": ["^([ \\*\\?])*$"],
+    "macroExclusionsEnable": true,
+    "macroExclusionsSendTelemetry": true
+  },
+  "firewallControl": {
+    "enabled": false,
+    "notifyUI": true,
+    "permitBits": true,
+    "locationAware": false,
+    "controlStealth": false,
+    "dnsParserConfig": {
+      "maxRDataLength": 400,
+      "verboseLogging": false,
+      "maxQueryEntriesInDnsPacket": 20,
+      "maxAnswerRecordsInDnsPacket": 25,
+      "maxDomainNamePointerOffsetAllowed": 4095,
+      "maxRedirectionsAllowedInDomainName": 15
+    },
+    "dnsSnifferConfig": {
+      "enableWatchdogs": true,
+      "matchingCacheLimit": 2048,
+      "dnsSnifferTelemetriesConfig": {
+        "enabled": false,
+        "maxCountPerTelemetry": 30
+      },
+      "reverseDnsCacheWatchdogFrequency": 30,
+      "enablePerformanceCountersTelemetry": true,
+      "performanceCountersSamplingFrequency": 14400,
+      "reverseDnsRecordLifeTimeAfterExpiration": 86400,
+      "interestingTransactionsWatchdogFrequency": 60
+    },
+    "supportFqdnRules": true,
+    "supportUnifiedRules": true,
+    "reportExistingCallouts": true,
+    "splittingRulesOsVersionMaxVersion": "6.2",
+    "shouldApplyDhcpOnlyFromDhcpService": false,
+    "allowOverridingUserDefinedBlockFilters": false,
+    "allowOverridingUserDefinedPermitFilters": true,
+    "allowOverridingAgentStabilityBlockFilters": false,
+    "allowOverridingAgentStabilityPermitFilters": false
+  },
+  "firewallLogging": {
+    "reportLog": false,
+    "reportMgmt": false,
+    "reportVisibleLog": false,
+    "aggregationIntervalSeconds": 60,
+    "reportPermittedPacketsToEventLog": false,
+    "reportBuiltInRulesPermittedToEventLog": false
+  },
+  "limitDumpUpload": true,
+  "monitorFSconfig": {
+    "enabled": false,
+    "hardCodeEnabled": true
+  },
+  "researchCollect": true,
+  "resourceMonitor": {
+    "cacheIn": {
+      "high": 25000,
+      "insane": 100000,
+      "medium": 15000,
+      "normal": 5000,
+      "enabled": true,
+      "extreme": 50000,
+      "sampleCount": 60,
+      "enableTelemetry": true
+    },
+    "cacheOut": {
+      "high": 25000,
+      "insane": 100000,
+      "medium": 15000,
+      "normal": 5000,
+      "enabled": true,
+      "extreme": 50000,
+      "sampleCount": 60,
+      "enableTelemetry": true
+    },
+    "eventHit": {
+      "high": 25000,
+      "insane": 100000,
+      "medium": 15000,
+      "normal": 5000,
+      "enabled": true,
+      "extreme": 50000,
+      "sampleCount": 60,
+      "enableTelemetry": false
+    },
+    "reportPdh": false,
+    "verboseLog": false,
+    "storageFind": {
+      "high": 25000,
+      "insane": 100000,
+      "medium": 15000,
+      "normal": 5000,
+      "enabled": true,
+      "extreme": 50000,
+      "sampleCount": 60,
+      "enableTelemetry": true
+    },
+    "eventLatency": {
+      "high": 60000000,
+      "insane": 600000000,
+      "medium": 30000000,
+      "normal": 3000000,
+      "enabled": true,
+      "extreme": 360000000,
+      "sampleCount": 60,
+      "enableTelemetry": true
+    },
+    "loggedEvents": {
+      "high": 25000,
+      "insane": 100000,
+      "medium": 15000,
+      "normal": 5000,
+      "enabled": true,
+      "extreme": 50000,
+      "sampleCount": 60,
+      "enableTelemetry": true
+    },
+    "storageWrite": {
+      "high": 25000,
+      "insane": 100000,
+      "medium": 15000,
+      "normal": 5000,
+      "enabled": true,
+      "extreme": 50000,
+      "sampleCount": 60,
+      "enableTelemetry": true
+    },
+    "avoidAllDumps": true,
+    "agentProcessCPU": {
+      "high": 50,
+      "insane": 95,
+      "medium": 40,
+      "normal": 10,
+      "enabled": true,
+      "extreme": 70,
+      "sampleCount": 60,
+      "enableTelemetry": true
+    },
+    "avoidAllReloads": false,
+    "enableTestDumps": false,
+    "processedEvents": {
+      "high": 25000,
+      "insane": 100000,
+      "medium": 15000,
+      "normal": 5000,
+      "enabled": true,
+      "extreme": 50000,
+      "sampleCount": 60,
+      "enableTelemetry": true
+    },
+    "StaticEngineConfig": {
+      "dumpAllowed": true,
+      "reloadAllowed": true,
+      "dumpCountLimit": 1,
+      "reloadInterval": 30
+    },
+    "checkStatsInterval": 60000,
+    "SentinelAgentConfig": {
+      "dumpAllowed": true,
+      "reloadAllowed": true,
+      "dumpCountLimit": 1,
+      "reloadInterval": 1440
+    },
+    "StaticScannerConfig": {
+      "dumpAllowed": true,
+      "reloadAllowed": true,
+      "dumpCountLimit": 1,
+      "reloadInterval": 30
+    },
+    "storageFindNotFound": {
+      "high": 25000,
+      "insane": 100000,
+      "medium": 15000,
+      "normal": 5000,
+      "enabled": true,
+      "extreme": 50000,
+      "sampleCount": 60,
+      "enableTelemetry": true
+    },
+    "SentinelLoggerConfig": {
+      "dumpAllowed": true,
+      "reloadAllowed": true,
+      "dumpCountLimit": 1,
+      "reloadInterval": 30
+    },
+    "SentinelRangerConfig": {
+      "dumpAllowed": true,
+      "reloadAllowed": true,
+      "dumpCountLimit": 1,
+      "reloadInterval": 30
+    },
+    "initCooldownInterval": 1200000,
+    "agentProcessCpuForWPR": {
+      "high": 50,
+      "insane": 95,
+      "medium": 10,
+      "normal": 5,
+      "enabled": true,
+      "extreme": 70,
+      "sampleCount": 5,
+      "enableTelemetry": true
+    },
+    "agentProcessTotalMemory": {
+      "high": 3000,
+      "insane": 10000,
+      "medium": 1000,
+      "normal": 500,
+      "enabled": true,
+      "extreme": 5000,
+      "sampleCount": 60,
+      "enableTelemetry": true
+    },
+    "peripheralProcessMemory": {
+      "high": 300,
+      "insane": 1000,
+      "medium": 150,
+      "normal": 100,
+      "enabled": true,
+      "extreme": 400,
+      "sampleCount": 60,
+      "enableTelemetry": true
+    },
+    "enablePerformanceManager": true,
+    "agentProcessPrivateMemory": {
+      "high": 800,
+      "insane": 9001,
+      "medium": 400,
+      "normal": 200,
+      "enabled": true,
+      "extreme": 3000,
+      "sampleCount": 60,
+      "enableTelemetry": true
+    },
+    "enableStatisticsCollector": true,
+    "enablePerformanceTelemetry": true,
+    "tickerSamplingTaskInterval": 10000,
+    "topResourceConsumptionMinPeriod": 10,
+    "enablePerformanceManagerTelemetry": true,
+    "performanceManagerTelemetryInterval": 3600000,
+    "enablePerformanceManagerVerboseTelemetry": true,
+    "performanceManagerTelemetryVerboseInterval": 30000,
+    "performanceManagerTelemetryVerboseTimeLimit": 600000,
+    "performanceManagerTelemetryVerboseMutePeriod": 86400000
+  },
+  "wscRegisterAsAS": true,
+  "wscRegisterAsFW": true,
+  "wscRegistration": true,
+  "agentDataDirPath": "C:\\ProgramData\\Sentinel\\",
+  "bootTimeDuration": 60,
+  "bruteForceConfig": {
+    "isVerbose": false,
+    "connectionConfig": {
+      "allowedAttempts": 10,
+      "validationInterval": 10
+    },
+    "detectionEnabled": true,
+    "netlogonDetectionEnabled": true,
+    "outgoingConnectionConfig": {
+      "allowedAttempts": 10,
+      "validationInterval": 10
+    },
+    "externalAttackerThreshold": 5,
+    "connectionDetectionEnabled": false,
+    "authenticationTimeThreshold": 60,
+    "allowedAuthenticationAttempts": 20,
+    "netlogonMaxAuthenticationAttempts": 10,
+    "outgoingConnectionDetectionEnabled": false,
+    "netlogonAuthenticationTimeThreshold": 60,
+    "minAuthenticationAttemptsBetweenEvents": 500,
+    "netlogonMaxAuthenticationAttemptsPatched": 250
+  },
+  "diagnosticConfig": {
+    "loadBalanceUploads": true,
+    "uploadChanceInPercent": 1,
+    "verboseDiagnosticMode": false,
+    "diagnosticCollectionMaxCount": 10,
+    "sendDiagnosticsWithFetchLogCommand": false
+  },
+  "dnsPoisoningTrap": {
+    "enabled": true,
+    "service": "llmnr",
+    "hostname": "*-~.local",
+    "maxInterval": 90,
+    "minInterval": 30
+  },
+  "dotNetProtection": {
+    "abTest": false,
+    "enabled": true,
+    "nativeAppsAbTest": false,
+    "protectNativeApps": false,
+    "abTestEnabledGroup": true,
+    "sendCLRRuntimeHostEvent": true,
+    "disableTieredCompilation": true,
+    "enableTargetAssemblyHooks": false,
+    "maximumSupportedPwshVersion": "7.5.0.3",
+    "maximumSupportedPowershellVersion": ""
+  },
+  "enableBICallback": false,
+  "indirectSyscalls": {
+    "detectionEnabled": true,
+    "monitorThreadCallbacks": true,
+    "monitorProcessCallbacks": true,
+    "monitorRegistryCallbacks": true,
+    "monitorModuleLoadCallback": true,
+    "monitorFileSystemCallbacks": true,
+    "monitorObjectManagerCallbacks": true
+  },
+  "ioctlRulesConfig": {
+    "enabled": false,
+    "logVisibility": true,
+    "useBaselineIoctlRules": true,
+    "eventsPerIoctlThreshold": 5
+  },
+  "judgeableMsvsmon": true,
+  "rebootlessConfig": {
+    "subMode": 2,
+    "injection": true,
+    "isEnabled": true,
+    "telemetry": {
+      "enableUpgradeStatistics": true,
+      "enableInheritedSpawnerTelemetry": true
+    },
+    "sendLoadedModules": true,
+    "delayRebootlessDecision": true,
+    "recoverCorruptedDatabase": true,
+    "objectManagerAutoRepairsLimit": 5,
+    "shouldPromoteInheritedSpawner": true,
+    "downgradeModeOnSessionRecovery": true,
+    "allowMarkedThreatsOnPartialGroup": true,
+    "shouldRequestImageLoadRundownEvents": true,
+    "shouldSuppressPartialGroupsInFullMode": true,
+    "enableRebootlessWithExtendedExclusions": true,
+    "reportRebootlessWithoutDynamicDetection": false
+  },
+  "regRestoreConfig": {
+    "regRemovePriv": true,
+    "blockRegReplace": true,
+    "blockRegRestore": true
+  },
+  "sendABTestStatus": false,
+  "sendRapidLogging": false,
+  "serviceRelinking": true,
+  "shouldScanRename": true,
+  "stackTraceConfig": {
+    "infra": 0,
+    "sendTelemetry": false,
+    "enableForProviders": [
+      "SentinelApiProvider",
+      "SentinelKernelProcessNotify",
+      "MicrosoftWindowsThreatIntelligence"
+    ]
+  },
+  "statisticsConfig": {
+    "collectDBStats": true,
+    "intervalInSeconds": 300,
+    "collectAdvancedDBStats": false
+  },
+  "werReportsConfig": {
+    "collectionInterval": 86400,
+    "maxSizePerIteration": 512000,
+    "shouldCollectWERReports": false,
+    "maxSizeOfSingleWERReport": 102400,
+    "maxWERReportsDirectorySize": 1048576
+  },
+  "collectStackTrace": false,
+  "cryptoMinerConfig": {
+    "coolDownFactor": 20,
+    "browserBasedScan": 2,
+    "coolDownTimeSecs": 600,
+    "processBasedScan": 2,
+    "minIntervalTimeMS": 600000,
+    "threadTimeRatioThreshold": 30
+  },
+  "deepHookingConfig": {
+    "deepHooking": true,
+    "disableOnVBS": false,
+    "reportDSOnce": false,
+    "disableOnHVCI": false,
+    "thirdPartyOnly": false,
+    "deepHooking_x86": true,
+    "deepHooking_WOW64": true,
+    "disableOnVmwareVBS": true,
+    "etwBypassDetection": true,
+    "protectDeepHooking": false,
+    "thirdPartyOnlyOnVBS": false,
+    "thirdPartyOnlyOnHVCI": true,
+    "maxHookRemovalsPerProcess": 5,
+    "thirdPartyOnlyOnVmwareVBS": false,
+    "maxHookRemovalTelemetriesPerModule": 5,
+    "maxDirectSyscallTelemetriesPerModule": 5
+  },
+  "discoveryAIConfig": {
+    "enableBasicFeatures": false,
+    "enableVerboseLogging": false,
+    "telemetriesEnabledGroup": true,
+    "maximumEvaluationTimeInMinutes": 20,
+    "minimumEvaluationWaitTimeInMilliseconds": 5000
+  },
+  "diskSpaceReserver": {
+    "enabled": false,
+    "sizeInMB": 3072
+  },
+  "etwLogBufferCount": 0,
+  "forcedThreatMemes": false,
+  "keepAliveInterval": 30,
+  "locationAwareness": {
+    "enabled": true,
+    "forcedLocations": "",
+    "reportLocations": true,
+    "periodicReportIntervalSecs": 14400
+  },
+  "modelQueryTimeout": 30,
+  "persistenceConfig": {
+    "objectCacheSizes": {
+      "fileCacheMax": 16384,
+      "fileCacheMin": 256,
+      "taskCacheMax": 1024,
+      "taskCacheMin": 64,
+      "groupCacheMax": 4096,
+      "groupCacheMin": 16,
+      "shadowCacheMax": 256,
+      "shadowCacheMin": 1,
+      "processCacheMax": 4096,
+      "processCacheMin": 16,
+      "serviceCacheMax": 512,
+      "serviceCacheMin": 64,
+      "registryCacheMax": 16384,
+      "registryCacheMin": 256,
+      "shadowSetCacheMax": 256,
+      "shadowSetCacheMin": 1,
+      "referencesCacheSize": 16384
+    },
+    "cleanupCacheCycle": 512,
+    "databaseSizeLimit": 2147483648,
+    "erasureCacheCycle": 16777216,
+    "useIncrementalUids": true,
+    "cleanupCacheTimeout": 300000,
+    "sizeQuotaCheckCycleMask": 1048575,
+    "directoryChildrenCacheMaxElements": 512
+  },
+  "revokeFileOnWrite": false,
+  "scanModifiedFiles": true,
+  "automaticResponses": ["mitigation.none"],
+  "avoidRenameForApps": 1,
+  "communicatorConfig": {
+    "telemetry": true,
+    "forceProxy": false,
+    "logTraffic": false,
+    "queryEntra": false,
+    "sdkLogFile": false,
+    "tlsVersion": 2560,
+    "lastSoftCrc": 0,
+    "sdkLogLevel": 3,
+    "sendTimeout": 300000,
+    "connectTimeout": 30000,
+    "receiveTimeout": 300000,
+    "resolveTimeout": 30000,
+    "agentApiVersion": "24.1",
+    "maxRetriesProxy": 3,
+    "compressionState": true,
+    "telemetryInterval": 14400000,
+    "telemetryQueueSize": 900,
+    "secureProtocolUsage": 2,
+    "sendReputationHints": true,
+    "telemetryIntervalIo": 3600000,
+    "eventsPerSystemTrace": 100,
+    "forceReputationHints": false,
+    "proxyBackoffDuration": 10,
+    "tryReconnectInterval": 30,
+    "telemetryMaxSizeBytes": 512000,
+    "flushBuffersIntervalMS": 30000,
+    "purgeAssetsWhenCorrupt": true,
+    "sdkMaxNumberOfLogFiles": 1,
+    "sdkMaxlogFileSizeBytes": 104857600,
+    "upgradeInstallerTimeout": 3600000,
+    "manuallyResolveAutoProxy": true,
+    "sendEtwEventHitTelemetry": true,
+    "notificationMaxIntervalMS": 180000,
+    "telemetryIntervalDatabase": 86400000,
+    "researchDataUploadInterval": 600,
+    "etwEventHitTelemetryInterval": 86400000,
+    "loggedOnUsersIntervalMinutes": 180,
+    "notificationInitialBackoffMS": 10000,
+    "telemetryIntervalDisableMode": 86400000,
+    "telemetryIntervalObjectCache": 3600000,
+    "telemetryIntervalPerformance": 3600000,
+    "telemetryIntervalLimitedHashes": 7200000,
+    "telemetryLimitedHashesSizeLimit": 10,
+    "telemetryIntervalImplicitCreations": 28800000,
+    "sendEtwEventHitTelemetryForAllEvents": false,
+    "sendMergedDataInInventoryNotifications": true,
+    "rememberLastWorkingUserProxyConfiguration": true
+  },
+  "consumeDebugEvents": false,
+  "dfiResultCacheSize": 268435456,
+  "enginesWantedState": {
+    "exploits": "local",
+    "fileLess": "local",
+    "dataFiles": "local",
+    "reputation": "local",
+    "executables": "local",
+    "penetration": "local",
+    "remoteShell": "local",
+    "preExecution": "local",
+    "driverBlocking": "local",
+    "lateralMovement": "local",
+    "preExecutionSuspicious": "local"
+  },
+  "etlTelemetryConfig": {
+    "enabled": false,
+    "etwBufferSize": 32,
+    "etlCaptureTime": 300,
+    "maxEventsPerEtl": 10000,
+    "stackHistorySize": 1000,
+    "etwMaximumBuffers": 32,
+    "etwMinimumBuffers": 4
+  },
+  "eventLatencyConfig": {
+    "measureLatency": true,
+    "eventLatencyMeasurementInterval": 30000
+  },
+  "experimentalConfig": {
+    "detectMaliciousBrowserSpawn": true
+  },
+  "filterSystemEvents": true,
+  "forceMarkedThreats": 1,
+  "fullDiskScanConfig": {
+    "logErrors": true,
+    "logReports": true,
+    "reputation": {
+      "enabled": true,
+      "resultsTimeout": 600000,
+      "timeBeforeStatusQuery": 10000,
+      "maximalHashesCountInScan": 10000,
+      "checkHashesStaticAIBenign": false,
+      "checkHashesStaticAIValidate": true,
+      "maximalHashesCountInMessage": 10000,
+      "checkHashesStaticAIUnsupported": false,
+      "checkHashesStaticAICheckReputation": true
+    },
+    "StaticAIScan": true,
+    "extendedScan": true,
+    "logMaxSizeMB": 1024,
+    "blacklistScan": true,
+    "workerCpuLimit": 30,
+    "archivesMaxDepth": 10,
+    "scanQueueMaximum": 20,
+    "enumerationCpuLimit": 100,
+    "maxScanReportsCount": 10,
+    "scanContextMenuItem": true,
+    "shouldScanExtensions": false,
+    "verbosePartialStatus": false,
+    "archivesMaxFilesCount": 10000,
+    "scanningThreadsPercentage": 50,
+    "showScanReportFromContextMenu": true,
+    "showProgressBarFromContextMenu": true,
+    "archivesRaiseThreatBasedOnStaticAI": false,
+    "automaticScanExternalDrivesEnabled": false
+  },
+  "keepAliveFailCount": 8,
+  "maxCountCrashdumps": 10,
+  "maxFileSizeForHash": 31457280,
+  "mgmtReportedHashes": 3,
+  "remoteGroupTimeout": 300,
+  "remoteOpsForensics": {
+    "enabled": false,
+    "cpuLimit": 30,
+    "resultsEndpoint": "/api/v1.6/remote-ops/forensics/addon-notification",
+    "maximumDailyUpload": 21474836480,
+    "localDestinationPath": "",
+    "maximumFileSizeUpload": 10737418240,
+    "parsedArtifactsDestination": "skylight"
+  },
+  "remoteRpcRelinking": true,
+  "researchDataConfig": {
+    "enabled": true,
+    "maxFiles": 100,
+    "sendTimeout": 3600000,
+    "eventsPerLog": 65536,
+    "maxBuffersInQueue": 32,
+    "staticCollectThreshold": 0.5
+  },
+  "rpcRelinkingMethod": 1,
+  "safeBootProtection": true,
+  "staticEngineConfig": {
+    "dumpOnTimeout": true,
+    "workerCpuLimit": 100,
+    "useAppContainer": true,
+    "scanInBackgroundMode": false,
+    "staticEngineUseAlternative": false
+  },
+  "systemLoggerConfig": {
+    "enable": false,
+    "profileName": "",
+    "customConfig": {
+      "bufferSize": 0,
+      "enableFlags": 0,
+      "logFileMode": 0,
+      "maximumBuffers": 0,
+      "minimumBuffers": 0,
+      "maximumFileSize": 0,
+      "useEventTraceFlagExtension": false
+    },
+    "useCustomConfig": false,
+    "cleanCurrentBoot": true,
+    "intervalBetweenWPRs": 60
+  },
+  "addonsManagerConfig": {
+    "uploadFileTimeout": 600000
+  },
+  "allowUnsignedAssets": false,
+  "antiTamperingConfig": {
+    "handleOpening": {
+      "blockHandleOpeningByIoControlForFiles": false,
+      "checkHandleOpeningByIoControlForFiles": true,
+      "blockHandleOpeningByIoControlForRegistry": false,
+      "checkHandleOpeningByIoControlForRegistry": true,
+      "blockHandleOpeningByIoControlForProcesses": false,
+      "checkHandleOpeningByIoControlForProcesses": true
+    },
+    "protectEfiVolume": false,
+    "alwaysScanDrivers": false,
+    "checkCertRevocation": true,
+    "onlineCertRevocation": false,
+    "efiModelQueryExclusion": true,
+    "protectInpcTextSection": false,
+    "useBaselineDriverRules": true,
+    "wintrustPolicySettings": 146432,
+    "allowMsconfigToSafeBoot": false,
+    "blockUnsignedDriverLoad": true,
+    "protectInpcRdataSection": false,
+    "protectNTdllRdataSection": false,
+    "tolerantDriverBlockingInBoot": true,
+    "blockDriversAccordingToConfig": true,
+    "blockUnsignedDriversInTestMode": false,
+    "enforceSingleDriverBlockingAsset": true,
+    "protectFilesFromKernelOperations": false,
+    "useTrustLabelForProtectedObjects": true,
+    "useTrustLabelForCommunicationPort": true,
+    "protectRegistryFromKernelOperations": false,
+    "autoRemoveTrustLabelsForWindowsSetup": true,
+    "driverBlockingSignaturesOverrideJson": "",
+    "protectProcessesFromKernelOperations": false,
+    "allowSignedKnownAndVerifiedToSafeBoot": false,
+    "blockDriverIfNoCounterSignatureTimestamp": false
+  },
+  "apcExclusionVerbose": true,
+  "apcGetAtomProtected": false,
+  "bitLockerProtection": {
+    "blockAllActions": false,
+    "blockUnknownActions": false
+  },
+  "disableRpcTdhFilter": false,
+  "enableVerdictsAsset": true,
+  "maxNotificationSize": 10485760,
+  "mbrProtectionConfig": {
+    "protectGPT": false,
+    "protectRawVolumes": true,
+    "protectVirtualDisks": false,
+    "protectPortableDevices": false,
+    "protectUnbootablePartitions": false,
+    "allowVirtualDiskServiceWrites": true
+  },
+  "packetSnifferConfig": {
+    "comAuthentication": true,
+    "ruleAdditionEnabled": true
+  },
+  "rdpProtectionConfig": {
+    "rdpRelinking": true,
+    "alertOnUnknownIP": false,
+    "enableAndProtectNLA": 1,
+    "preventMaliciousRdp": true,
+    "alertOnPatchedMachines": false,
+    "alertOnUnpatchedMachines": true
+  },
+  "realTimeJudgeConfig": {
+    "enableOnBlacklistUpdate": true
+  },
+  "remoteGroupLifetime": 86400,
+  "autoFileUploadConfig": {
+    "enabled": false,
+    "uploadAds": true,
+    "validDays": 30,
+    "dailyLimit": 0,
+    "allowSigned": false,
+    "maxFileSize": 0,
+    "maxDiskUsage": 0,
+    "maxPendingFiles": 512,
+    "collectTelemetry": true,
+    "uploadLoadedDlls": true,
+    "maxCacheRecordsCount": 8192,
+    "uploadBenignLoadedDlls": false,
+    "uploadOnEveryProcessCreation": false,
+    "uploadMaliciousNonExecutableFiles": false,
+    "uploadBenignSignedNotVerifiedLoadedDlls": false
+  },
+  "blockManualHardLinks": false,
+  "blockSuspiciousPipes": true,
+  "driverBlockingConfig": {
+    "raiseDynamicThreat": true
+  },
+  "dynamicBasedOnStatic": true,
+  "etwEventsQueueConfig": {
+    "enabled": false,
+    "maxBufferCount": 300
+  },
+  "javaProtectionConfig": {
+    "enableJavaAgent": true,
+    "preventLog4ShellRCE": false,
+    "preventSpring4Shell": false,
+    "preventLog4ShellJNDI": false,
+    "enableSpring4ShellDetection": true,
+    "stackFramesToInspectForLog4J": 50,
+    "enableLog4JFormatMsgNoLookups": false,
+    "tomcatWebshellDetectionConfig": {
+      "abTest": false,
+      "enabled": true,
+      "abTestEnabledGroup": false,
+      "incriminatingModificationTimeout": 24
+    },
+    "enableLog4ShellExtendedDetection": true
+  },
+  "judgeTelemetryConfig": {
+    "capUniqueProcess": 200,
+    "capNumberOfEvents": 200,
+    "judgeTelemetryInterval": 21600000,
+    "capTotalNumberOfUniqueStoryLines": 200
+  },
+  "lostEventsThresholds": {
+    "ntdllUnmapped": 0,
+    "updateInterval": 3,
+    "processHollowing": 0
+  },
+  "minEtwLogBufferCount": 0,
+  "nativeWow64Injection": true,
+  "powershellProtection": true,
+  "preventUserCallbacks": false,
+  "printNightmareConfig": {
+    "detection": true,
+    "prevention": false
+  },
+  "qfeDisableLDAPClient": false,
+  "stackPivotProtection": true,
+  "wiperHeuristicConfig": {
+    "moveAfterWrite": {
+      "fileOpsThreshold": 100,
+      "maxMoveWritesRatio": 120,
+      "minMoveWritesRatio": 80,
+      "touchedDirectoriesThreshold": 10,
+      "thresholdMultiplicativeFactor": 1.5
+    },
+    "deleteAfterWrite": {
+      "fileOpsThreshold": 100,
+      "touchedDirectoriesThreshold": 10,
+      "minDeleteAfterWriteFromAllWritesRatio": 80,
+      "minDeleteAfterWriteFromAllDeletesRatio": 80
+    },
+    "deleteDecoyFiles": {
+      "fileOpsThreshold": 150,
+      "touchedDecoyDirectories": 15,
+      "minDeletesToOtherFileOperationsRatio": 100
+    },
+    "checkWiperFileOps": {
+      "maxCheckedFilesNum": 200,
+      "minimumFilesThreshold": 50,
+      "regularEmptyFilesRatio": 0.85,
+      "regularWipedFilesRatio": 0.85,
+      "decoyEmptyFilesThreshold": 10,
+      "decoyWipedFilesThreshold": 10
+    },
+    "enableEntropyCheck": true,
+    "generalFileDeletion": {
+      "fileOpsThreshold": 20000,
+      "touchedDirectoriesThreshold": 500,
+      "minDeletesToOtherFileOperationsRatio": 100
+    },
+    "overwriteDecoyFiles": {
+      "fileOpsThreshold": 150,
+      "touchedDecoyDirectories": 15,
+      "thresholdMultiplicativeFactor": 1.5
+    },
+    "moveAfterWriteDecoyFiles": {
+      "fileOpsThreshold": 25,
+      "maxMoveWritesRatio": 120,
+      "minMoveWritesRatio": 80,
+      "touchedDecoyDirectories": 5,
+      "thresholdMultiplicativeFactor": 1.5
+    },
+    "deleteAfterWriteDecoyFiles": {
+      "fileOpsThreshold": 25,
+      "touchedDecoyDirectories": 5,
+      "minDeleteAfterWriteFromAllWritesRatio": 80,
+      "minDeleteAfterWriteFromAllDeletesRatio": 80
+    }
+  },
+  "agentProgramFilesPath": "C:\\Program Files\\SentinelOne\\",
+  "apcShellcodeProtected": true,
+  "disableLsaSrvProvider": false,
+  "enableUIThreatHistory": false,
+  "forkProcessFromKernel": true,
+  "healthCollectorConfig": {
+    "trackVssHealth": true,
+    "trackDiskHealth": true,
+    "maxDiskHealthMetrics": 3,
+    "collectHealthTelemetry": true,
+    "diskHealthTrackingInterval": 24,
+    "healthTelemetryCollectionFrequency": 300
+  },
+  "ignoreExploitableCert": false,
+  "limitWorkingSetConfig": {
+    "flags": 4,
+    "enabled": false,
+    "maxWorkingSetMB": 512,
+    "minWorkingSetMB": 50
+  },
+  "ransomHeuristicConfig": {
+    "decoyTouch": {
+      "fileOpsThreshold": 25,
+      "touchedDecoyDirectories": 5,
+      "thresholdMultiplicativeFactor": 1.5
+    },
+    "miscWrites": {
+      "touchedFilesThreshold": 1000,
+      "touchedFilesPostThreshold": 10
+    },
+    "miscCreates": {
+      "maxRatio": 100,
+      "minRatio": 95,
+      "fileOpsThreshold": 100,
+      "miscCreatesThreshold": 15,
+      "touchedDirectoriesThreshold": 15,
+      "thresholdMultiplicativeFactor": 1.5
+    },
+    "checkFileOps": {
+      "maxCheckedFilesNum": 200,
+      "decoyEntropyThreshold": 0.7,
+      "minimumFilesThreshold": 50,
+      "maxLowEntropyChunksNum": 3,
+      "regularEntropyThreshold": 0.9,
+      "regularLockedFilesRatio": 0.65,
+      "decoyLockedFilesThreshold": 10,
+      "regularHighEntropyFilesRatio": 0.65,
+      "decoyHighEntropyFilesThreshold": 10,
+      "decoyFilesMinHighEntropyChunksNum": 2,
+      "regularWithoutExpectedMagicFilesRatio": 0.65,
+      "decoyWithoutExpectedMagicFilesThreshold": 10,
+      "regularB64ContentWithoutExpectedMagicFilesRatio": 0.65,
+      "decoyB64ContentWithoutExpectedMagicFilesThreshold": 10
+    },
+    "traceInterval": 25,
+    "encryptInPlace": {
+      "fileOpsThreshold": 100,
+      "minWriteCreateRatio": 3,
+      "touchedDirectoriesThreshold": 10,
+      "thresholdMultiplicativeFactor": 1.5
+    },
+    "encryptAfterMove": {
+      "fileOpsThreshold": 100,
+      "maxWritesMoveRatio": 120,
+      "minWritesMoveRatio": 80,
+      "touchedDirectoriesThreshold": 10,
+      "thresholdMultiplicativeFactor": 1.5
+    },
+    "maxChunksToCheck": 1048576,
+    "maxEntropyChecks": 10,
+    "multipleMiscCreates": {
+      "miscCreatesThreshold": 5
+    },
+    "knownRansomExtensions": {
+      "minRatio": 30,
+      "fileOpsThreshold": 10
+    },
+    "encryptAfterDeleteCreate": {
+      "fileOpsThreshold": 100,
+      "maxWriteCreateRatio": 120,
+      "minWriteCreateRatio": 80,
+      "maxDeleteCreateRatio": 120,
+      "minDeleteCreateRatio": 80,
+      "touchedDirectoriesThreshold": 10,
+      "thresholdMultiplicativeFactor": 1.5
+    },
+    "touchedDirectoriesPostThreshold": 10,
+    "savedTouchedDirectoriesThreshold": 1000
+  },
+  "wmiOperationVerbosity": false,
+  "denyLsassWriteWindows7": false,
+  "directorySearchTimeout": 120,
+  "eventHandlingThreshold": 3000,
+  "ignoreMsiExploitedCert": false,
+  "ransomDecoyFilesConfig": {
+    "enabled": true,
+    "decoyCopiesMax": 0,
+    "disableWatchdog": false,
+    "usersDecoyCopiesMax": 20,
+    "sharesDecoyCopiesMax": 10,
+    "disableExtendedDecoys": false,
+    "enableSharedFoldersDecoys": false
+  },
+  "removeDumpsNotUploaded": true,
+  "sendABTestProcessCrash": true,
+  "enableDllResourceChecks": true,
+  "enableYaraMemoryScanner": true,
+  "inlineFileScannerConfig": {
+    "mode": 3,
+    "telemetryMode": 0,
+    "driverBlockTimeout": 30000,
+    "processBlockTimeout": 500,
+    "avoidBlockingBlacklist": false,
+    "idrProcessBlockTimeout": 500,
+    "peInformationScanTimeout": 500,
+    "shouldInlineScanPEInformation": true,
+    "peInformationThreadsPercentage": 100,
+    "driverBlockTimeoutOnFileModification": 5000
+  },
+  "monitorBehavioralEvents": true,
+  "powershellISEProtection": false,
+  "snapshotIntervalMinutes": 240,
+  "synchronousCOMCallbacks": false,
+  "useLegacyWinVerifyTrust": false,
+  "autoDeployVerboseLogging": false,
+  "lsassInvasivePermissions": 32,
+  "maxFileSizeForSha256Hash": 134217728,
+  "mgmtCommunicationEnabler": {
+    "enabled": true,
+    "portCommunicationEnabled": false,
+    "shouldApplyDhcpOnlyFromDhcpService": false
+  },
+  "networkQuarantineControl": {
+    "rulesEnabled": false,
+    "locationAware": true,
+    "supportFqdnRules": false,
+    "dnsHardeningConfig": {
+      "perOsConfig": [
+        {
+          "first": {
+            "maxVersion": 4294967295,
+            "minVersion": 9200
+          },
+          "second": {
+            "rpcProcNumberToFail": 4,
+            "expectedRpcProcNumbers": [4]
+          }
+        }
+      ],
+      "hookValidationEnabled": true
+    },
+    "shouldApplyDnsHardening": false,
+    "shouldApplyDhcpOnlyFromDhcpService": false
+  },
+  "sendApplicationInventory": true,
+  "suppressUntilFirstConfig": true,
+  "useBitsForSoftwareUpdate": true,
+  "detectionExtensionsConfig": {
+    "all": false,
+    "proxy": false,
+    "dllLoad": false,
+    "general": false,
+    "rootkit": false,
+    "ldapQuery": false,
+    "dataStaging": false,
+    "vmDetection": false,
+    "reportAllBIs": false,
+    "queryRegistry": false,
+    "httpConnection": false,
+    "mailConnection": false,
+    "networkUdpSend": false,
+    "registryModify": false,
+    "remoteFileCopy": false,
+    "smbShareAccess": false,
+    "emailCollection": false,
+    "ignoreDVfilters": false,
+    "ioctlVisibility": false,
+    "scriptExecution": false,
+    "credentialsQuery": false,
+    "indicatorRemoval": false,
+    "trafficSignaling": false,
+    "webScriptCreated": false,
+    "ldapAddOperations": false,
+    "registryComObject": false,
+    "softwareDiscovery": false,
+    "tokenManipulation": false,
+    "trackBrowserSpawn": false,
+    "APITimeGranularity": 1000,
+    "checkAllLdapScopes": false,
+    "credentialsInFiles": false,
+    "ldapDiscoveryQuery": false,
+    "monitorObfuscation": false,
+    "triggerNetworkInfo": false,
+    "binaryDroppedOnPath": false,
+    "encryptionAlgorithm": false,
+    "executionThroughAPI": false,
+    "screenshotDetection": false,
+    "serviceModification": false,
+    "wordTemplateStartup": false,
+    "detoursApiVisibility": false,
+    "extendedDllHijacking": true,
+    "monitorInlineHooking": false,
+    "networkDataExtractor": false,
+    "possibleDllHijacking": false,
+    "possibleDllInjection": false,
+    "primaryUserDiscovery": false,
+    "sharedContentTainted": false,
+    "emailAccountDiscovery": false,
+    "filePermissionsChange": false,
+    "internalRemoteService": false,
+    "networkConnectionIcmp": false,
+    "APIVisibilityExclusion": {
+      "APIVisibilityExclusionVector": [
+        {
+          "pattern": "C:\\Windows\\System32\\SERVICES.EXE",
+          "exclusions": ["disablevisibilityhooks"]
+        },
+        {
+          "pattern": "C:\\Windows\\System32\\WINLOGON.EXE",
+          "exclusions": ["disablevisibilityhooks"]
+        },
+        {
+          "pattern": "C:\\Windows\\System32\\SMSS.EXE",
+          "exclusions": ["disablevisibilityhooks"]
+        },
+        {
+          "pattern": "C:\\Windows\\System32\\WININIT.EXE",
+          "exclusions": ["disablevisibilityhooks"]
+        },
+        {
+          "pattern": "C:\\Windows\\System32\\LSASS.EXE",
+          "exclusions": ["disablevisibilityhooks"]
+        },
+        {
+          "pattern": "C:\\Windows\\System32\\LSM.EXE",
+          "exclusions": ["disablevisibilityhooks"]
+        },
+        {
+          "pattern": "C:\\Windows\\System32\\CSRSS.EXE",
+          "exclusions": ["disablevisibilityhooks"]
+        },
+        {
+          "pattern": "C:\\Windows\\System32\\SYSTEM.EXE",
+          "exclusions": ["disablevisibilityhooks"]
+        },
+        {
+          "pattern": "C:\\Windows\\INTERRUPTS.EXE",
+          "exclusions": ["disablevisibilityhooks"]
+        },
+        {
+          "pattern": "C:\\Windows\\System32\\NTOSKRNL.EXE",
+          "exclusions": ["disablevisibilityhooks"]
+        }
+      ]
+    },
+    "hijackExecutionSameDir": false,
+    "monitorRegistryQueries": false,
+    "monitorTokenOperations": false,
+    "networkServiceScanning": false,
+    "systemServiceDiscovery": false,
+    "executionThroughEnvPath": false,
+    "extendedTrackedRegistry": false,
+    "extractTokenInformation": true,
+    "monitorProcessDiscovery": false,
+    "monitorUsnJournalDelete": true,
+    "networkTcpProtocolsSend": false,
+    "officeVBAMacroDetection": false,
+    "privateKeysStealAttempt": false,
+    "serviceControlDetection": false,
+    "softwareDeploymentTools": false,
+    "systemLocationDiscovery": false,
+    "extendedPathInterception": false,
+    "monitorWindowEnumeration": false,
+    "nameServiceResponderBind": false,
+    "nameServiceResponderSend": false,
+    "possibleHiddenFileSystem": false,
+    "possiblePasswordGuessing": false,
+    "threadExecutionHijacking": false,
+    "monitorAllRegistryQueries": false,
+    "transportAgentPersistence": false,
+    "differentTokenSystemSigned": false,
+    "extendedVssCredsHarvesting": false,
+    "monitorSystemInfoDiscovery": false,
+    "trackBrowserForbiddenSpawn": true,
+    "monitorOutlookFileCreations": false,
+    "nameServiceResponderReceive": false,
+    "disableOrModifySecurityTools": false,
+    "sysNameNotInSysDirMasquerade": false,
+    "dataEncodingNetworkConnection": false,
+    "extendedNetworkConnectionData": false,
+    "fullPeripheralDeviceDiscovery": false,
+    "groupPolicyModificationsFiles": false,
+    "monitorFileHiddenStatusChange": false,
+    "extendedDllHijackingFileChecks": false,
+    "extendedEventLogServiceStopped": false,
+    "extendedQuerySystemInformation": false,
+    "groupPolicyModificationsEvents": false,
+    "interpreterOnlyScriptExecution": false,
+    "iisApplicationHostConfigChanged": false,
+    "monitorFileOrDirectoryDiscovery": false,
+    "serviceOrTaskCreationMasquerade": false,
+    "groupPolicyModificationsRegistry": false,
+    "maxFileInHiddenFolderLookupDepth": 5,
+    "scheduledTaskMiscellaneousAction": false,
+    "extendedNetworkConfigurationDiscovery": false,
+    "extendedPersistenceWithoutInteraction": false,
+    "possibleCompromiseClientSoftwareBinary": false
+  },
+  "disableMimikatzProtection": false,
+  "networkInterceptorControl": {
+    "dnsInterceptorEnabled": true,
+    "connectionInterceptorEnabled": true,
+    "selfInjectedPacketsActionPermit": true
+  },
+  "qfeDisableCAPIETWProvider": 0,
+  "remoteScriptOrchestration": {
+    "dailyLimit": 524288000,
+    "maxFileSize": 262144000,
+    "defaultOutputDir": "%TEMP%\\rso_outputs\\",
+    "maxStreamFileSize": 20971520,
+    "dailyDownloadLimit": 524288000,
+    "maxPackageDiskUsage": 2147483648,
+    "resultUploadTimeoutMS": 1800000,
+    "suppressDynamicThreats": true,
+    "maxSizeForExecutionData": 1047552,
+    "scriptKeepaliveInterval": 60,
+    "alwaysUploadStreamsToCloud": false,
+    "threatSuppressionTimeoutMS": 300000,
+    "executionDataSendingTimeout": 60,
+    "packageDownloadTimeoutSeconds": 1800
+  },
+  "sendHashesOfModifiedFiles": true,
+  "sendInstallationTelemetry": true,
+  "serviceLoadUnloadWatchdog": {
+    "loadTimeOut": 600,
+    "unloadTimeOut": 480,
+    "terminatingAction": 0,
+    "shouldCreateLoadWatchdog": false
+  },
+  "shouldTakeDiagnosticDumps": false,
+  "softwareInventoryInterval": 3600,
+  "softwareInventoryMaxCount": 1500,
+  "traceBehavioralIndicators": false,
+  "traceMemoryTrackerRegions": false,
+  "usermodeImageExportChecks": true,
+  "bcdProtectionConfiguration": {
+    "testSigningProtection": true,
+    "efiImagePathProtection": false,
+    "shouldBlockKernelOperations": false
+  },
+  "extractScrconActiveContent": true,
+  "fetchLogsCompressionConfig": {
+    "level": 4,
+    "numberOfThreads": 1
+  },
+  "fileCompressorGadgetConfig": {
+    "enabled": true,
+    "interval": 86400
+  },
+  "iisWebshellDetectionConfig": {
+    "abTest": false,
+    "enabled": true,
+    "abTestEnabledGroup": true,
+    "incriminatingModificationTimeout": 24
+  },
+  "pendingLibraryLoadInterval": 5,
+  "preventBitlockerWmiQueries": false,
+  "protobufResearchDataConfig": {
+    "enabled": false,
+    "maxFiles": 50,
+    "sendTimeout": 3600000,
+    "eventsPerLog": 800,
+    "maxBuffersInQueue": 1,
+    "staticCollectThreshold": 0.5
+  },
+  "scanWindowsUpdateArtifacts": false,
+  "supportInteractiveSessions": true,
+  "topLevelExceptionDetection": true,
+  "useZwSetCachedSigningLevel": false,
+  "getModuleCachedSigningLevel": false,
+  "preventTxfModifiedImageLoad": false,
+  "shouldBlockVirtualboxIoctls": false,
+  "cyclicClockCalibrationConfig": {
+    "enabled": true,
+    "calibrationInterval": 30000
+  },
+  "denyLsassWriteThirdPartyOnly": true,
+  "holdBackActiveContentReports": true,
+  "measureEventHandlingDuration": true,
+  "preventAtExitSuspendedThread": false,
+  "preventDeployerMemoryReading": true,
+  "relinkAddressByCanonicalForm": true,
+  "removeUnrestoredFilesEnabled": false,
+  "shouldIncludeMDNSBuiltInRule": false,
+  "apacheWebshellDetectionConfig": {
+    "abTest": false,
+    "enabled": false,
+    "abTestEnabledGroup": true,
+    "incriminatingModificationTimeout": 24
+  },
+  "coreOsProcessMitigationConfig": {
+    "coreOsProcessMitigation": 1,
+    "rerunProcessesAfterMitigation": true
+  },
+  "delayedRegistryBehaviorConfig": {
+    "maxKeys": 500,
+    "maxInfos": 50
+  },
+  "injectIfInProcessClientSigned": true,
+  "lsassRegistryProtectionConfig": {
+    "traceLsassRegistryModification": false,
+    "preventLsassRegistryModification": false
+  },
+  "preventSharpC2StagerExecution": false,
+  "preventUnsignedImageLoadByPPL": false,
+  "scanPentestingFrameworkHashes": true,
+  "sendDvConnectionStatusChanges": true,
+  "shouldExceptOnUnallowedFileIO": false,
+  "shouldIncludeLLMNRBuiltInRule": false,
+  "detectUmpdCallbackExploitation": true,
+  "enableCryptoMinerMemoryScanner": false,
+  "explicitCredentialsLogonConfig": {
+    "isVerbose": true,
+    "detectionEnabled": true,
+    "minLogonAttempts": 10
+  },
+  "sendRevokeSpawnershipTelemetry": false,
+  "shouldMonitorFileDataLocations": true,
+  "validateTLSCertificatesOnDebug": true,
+  "allowUnprotectByApprovedProcess": true,
+  "denyLsassReadFromWerFaultSecure": true,
+  "deployerInstanceCreationTimeout": 120,
+  "powershellObfuscationDetections": true,
+  "inProcessClientAttestationSigned": true,
+  "isInternetExplorerHookingLimited": false,
+  "maxCommandlineSizeInNotification": 8192,
+  "triggerHangWhenEnabledAgentLoads": false,
+  "filterThreatsWithOplockNotGranted": false,
+  "protectPreviousModeExploitAttempt": false,
+  "relinkThreadPoolObjectDuplication": false,
+  "reportDisableStatusOnRegistration": false,
+  "auditSecuritySystemExtensionEvents": true,
+  "maxExecutableFileSizeForSha256Hash": 4294967295,
+  "preventThreadPoolObjectDuplication": false,
+  "browserSpawnMaxStackFrameIterations": 5,
+  "directVolumeFileHarvestingDetection": true,
+  "enableWsmprovhostInteractiveSession": true,
+  "preventCovenantGruntStagerExecution": false,
+  "shouldSkipEventsOnImplicitProcesses": true,
+  "wfpNetworkInspectionFeaturesEnabled": true,
+  "ignoreSvchostSeparationPreconditions": false,
+  "scanWindowsUpdateArtifactsInSlimMode": true,
+  "shouldCollectServiceInfoFromRegistry": true,
+  "comPlusEventClassRegistrationFallback": true,
+  "shouldPreventAddingUnknownSSPProviders": false,
+  "injectWhenModuleTamperingProtectionIsOn": true,
+  "preventProtectedFilesKernelModification": true,
+  "zoneIdentifierExtractorTimeframeSeconds": 300,
+  "networkDataExtractorEtwSendingIntervalMs": 60000,
+  "preventProtectedThreadsKernelTermination": false,
+  "propagateInjectionExclusionToDescendants": false,
+  "ransomwareBackgroundTextMatchesThreshold": 3,
+  "revokeSpawnershipOfContaminatedProcesses": false,
+  "suspiciousJSCollectGarbageDetectionConfig": {
+    "enabled": true,
+    "preventionEnabled": true
+  },
+  "preventProtectedProcessesKernelTermination": true,
+  "networkDataExtractorProtocolListRegValueMaxSize": 1048576,
+  "ticketDumpingKerbRetrieveEncodedTicketThreshold": 3,
+  "enableAppIncompatibilityCheckWithYaraMemoryScanner": false,
+  "readerSpawnFromThirdPartyModuleMaxStackFrameIterations": 70
+}
