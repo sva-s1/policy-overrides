@@ -1,0 +1,10 @@
+{
+    "deepVisibility": {
+        "eventLog": {
+            "channels": [],
+            "collectAllProviders": true,
+            "levels": [],
+            "sendOriginalXML": true
+        }
+    }
+}
