@@ -1,0 +1,17 @@
+{
+  "deepVisibility": {
+    "eventLog": {
+      "channels": {
+        "Application": [],
+        "ForwardedEvents": [],
+        "Microsoft-Windows-Sysmon/Operational": [],
+        "Security": [],
+        "Setup": [],
+        "System": [],
+        "Windows PowerShell": []
+      },
+      "levels": [],
+      "sendOriginalXML": true
+    }
+  }
+}
