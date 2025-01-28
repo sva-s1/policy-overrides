@@ -1,0 +1,18 @@
+{
+  "deepVisibility": {
+    "eventLog": {
+      "channels": {
+        "Application": [],
+        "Microsoft-Windows-AppLocker/EXE and DLL": [],
+        "Microsoft-Windows-AppLocker/MSI and Script": [],
+        "Microsoft-Windows-AppLocker/Packaged app-Deployment": [],
+        "Microsoft-Windows-AppLocker/Packaged app-Execution": [],
+        "Security": [],
+        "System": []
+      },
+      "collectAllProviders": true,
+      "levels": [0, 1, 2, 3, 4, 5],
+      "sendOriginalXML": true
+    }
+  }
+}
