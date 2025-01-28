@@ -1,0 +1,16 @@
+{
+  "deepVisibility": {
+    "eventLog": {
+      "channels": {
+        "Application": [],
+        "Security": [],
+        "Setup": [],
+        "System": [],
+        "Forwarded Events": []
+      },
+      "collectAllProviders": true,
+      "levels": [],
+      "sendOriginalXML": true
+    }
+  }
+}
