@@ -8,12 +8,10 @@
         "Security": [],
         "Setup": [],
         "System": [],
-        "Windows PowerShell": [],
-        "Microsoft-Windows-DNS-Server": [],
-        "Directory Services": []
+        "Windows PowerShell": []
       },
       "collectAllProviders": true,
-      "levels": [],
+      "levels": [0, 1, 2, 3, 4, 5],
       "sendOriginalXML": true
     }
   }

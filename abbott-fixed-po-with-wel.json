@@ -1,0 +1,46 @@
+{
+  "deepVisibility": {
+    "eventLog": {
+      "channels": {
+        "Application": [],
+        "ForwardedEvents": [],
+        "Microsoft-Windows-Sysmon/Operational": [],
+        "Security": [],
+        "Setup": [],
+        "System": [],
+        "Windows PowerShell": []
+      },
+      "collectAllProviders": true,
+      "levels": [0, 1, 2, 3, 4, 5],
+      "sendOriginalXML": true
+    },
+    "javaProtectionConfig": {
+      "enableJavaAgent": false
+    },
+    "logicClassifierConfigVector": {
+      "logicsClassification": [
+        {
+          "logicName": "logic_readerSpawnedCliCmd",
+          "verdict": "SUPPRESSED"
+        }
+      ]
+    },
+    "monitorConfig": {
+      "protectSamSave": true,
+      "registerNPFS": true
+    },
+    "powershellISEProtection": true,
+    "scripts": {
+      "batch": true,
+      "enabled": true,
+      "excluded": [],
+      "javaScript": true,
+      "maxSizeBytes": 131072,
+      "powershell": true,
+      "python": true,
+      "sendIntervalSeconds": 60,
+      "vbScript": true,
+      "vba": true
+    }
+  }
+}
